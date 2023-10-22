@@ -6,7 +6,7 @@ const input=document.querySelector('#input');
 const  buttonDisable=()=>{
     submit_button.disabled=true;
     submit_button.style.cursor='not-allowed';
-    submit_button.style.opacity='0.5';
+    submit_button.style.opacity='0.8';
 }
 const  buttonEnable=()=>{
     submit_button.disabled=false;
