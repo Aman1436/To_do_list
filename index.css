@@ -1,0 +1,103 @@
+body{
+    background-color:rgb(156, 168, 181) ;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+header{
+    display: flex;
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    user-select: none;
+}
+.container{
+    margin: 10px;
+    user-select: none;
+}
+#form button{
+    background-image:linear-gradient(lavender,#9b1529);
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    cursor:not-allowed;
+    box-shadow: 2px 2px 2px green ;
+}
+#form button:hover{
+    background-image:linear-gradient(to right,#575A4B,#88b308);
+    transform: scale(1.06);
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+}
+#form button:active{
+    background-image:linear-gradient(to right,#bed757,#2A2C24);
+    transform: translate(1px,3px);
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    box-shadow: none;
+}
+#form input{
+    border-radius: 6px;
+    height: 35px;
+    width: 300px;
+    border-color: aliceblue;
+    font-size: large;
+    background-image: linear-gradient(to right,rgb(216, 252, 255),rgb(213, 228, 195)) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5px;
+    box-shadow: 2px 2px 2px blue;
+}
+#form input:focus{
+    background-image: none;
+    background-color: rgb(226, 203, 135);
+    border-radius: 6px;
+    height: 35px;
+    width: 300px;
+    font-size: large;
+    border-color: aliceblue;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5px;
+}
+#items{
+    color:black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0px;
+}
+li{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+    background-color:wheat;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    padding-right: 5px;
+}
+.itemname{
+    width: 85%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+    background-color: wheat;
+    outline: none;
+    font-size: larger;
+}
+.check{
+ cursor: pointer;
+ height: 20px;
+ width: 20px;
+}
+.del{
+    cursor: pointer;
+}
+.del:active{
+    transform: translate(2px,3px);
+}
+
