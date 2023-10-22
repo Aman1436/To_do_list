@@ -19,7 +19,8 @@ const makeListItem=()=>{
     const newitem=document.createElement('li');
     newitem.id=crypto.randomUUID();
     newitem.innerHTML=`<input type="checkbox"  class="check" id=${crypto.randomUUID()} onclick="toggleCheck(this.id)">`;
-    newitem.innerHTML+=`<input type="text" class="itemname" value=${input.value}>`;
+    newitem.innerHTML+='<input type="text" class="itemname" value="'+input.value+'">';
+
     newitem.innerHTML+=`<i class='fa fa-trash del' onclick='this.parentElement.remove()'></i>`;
     return newitem;
 }
